@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorias diárias</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style.css">
+    <!-- links fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="EntradaDeDados" class="section">
+            <h1 class="titulo">Quantas calorias eu devo ingerir por dia?</h1>
+            <h4 class="titulo">Descubra a quantidade certa de calorias que você deve ingerir por dia!<br><br></h4>
+
+            
+            <form id="EntradaRadios">
+                <p id="subtitulo">Eu desejo saber o quanto eu devo ingerir para...</p>
+                <div>
+                    <input name="theradio" type="radio" id="radio1">
+                    <label for="radio1">Emagrecer</label>
+                </div>
+                <div>
+                    <input name="theradio" type="radio" id="radio2">
+                    <label for="radio2">Manter o peso</label>
+                </div>
+                <div>
+                    <input name="theradio" type="radio" id="radio3">
+                    <label for="radio3">Engordar</label>
+                </div>
+                <div id="EntradaPeso">
+                    <p id="labelPeso">Digite seu peso:
+                        <input type="number" id="peso">&nbsp;&nbsp;Kg
+                    </p>
+                    <input type="button" value="Calcular" id="btnCalcular" onclick="Calcular()">
+                </div>
+            </form>
+
+            <div class="resultado">
+              <p id="res"></p>
+            </div>
+        </section>
+        <script src="/assets/script.js"></script>
+    </main>
+</body>
+</html>
