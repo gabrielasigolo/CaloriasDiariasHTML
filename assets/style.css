@@ -14,14 +14,21 @@ body{
 main{
     display: flex;
     justify-content: center;
-    
+
+}
+
+#peso{
+    box-sizing: border-box;
+    font-size: 20px;
+    height: 30px;
+    width: 200px;
 }
 
 #EntradaDeDados{
     background: var(--preto-container);
     border-radius: 10px;
     width: 700px;
-    height: 320px;
+    height: 330px;
     padding-top: 2px;
     padding-left: 20px;
     padding-bottom: 10px;
@@ -37,6 +44,7 @@ main{
     text-align: center;
     padding-top: 70px;
     font-size: 20px;
+    position: absolute;
 }
 
 
